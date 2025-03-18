@@ -9,6 +9,7 @@ Initial Data Load: The dataset is loaded into a Pandas DataFrame.
 Basic Exploration: The basic structure of the data is explored, including checking the unique sentiment labels (positive, negative).
 Profiling: A detailed profile of the dataset is generated using the ydata_profiling library to provide insights into the data distribution and missing values.
 2. Text Preprocessing and Feature Engineering
+
 In this section, text reviews are cleaned and preprocessed for modeling. The following steps are involved:
 
 Word Count Calculation: A new feature for the number of words in each review is created.
@@ -16,6 +17,7 @@ Sentiment Encoding: Sentiment labels (positive/negative) are encoded as binary v
 Text Cleaning: The reviews are cleaned by removing URLs, HTML tags, and non-alphanumeric characters. All text is converted to lowercase.
 Tokenization and Stemming: The reviews are tokenized and stemmed using the Snowball Stemmer from the NLTK library to reduce words to their base forms.
 Stopword Removal: Common English stopwords (e.g., "the", "and") are removed to reduce noise in the data.
+
 3. Vectorization Techniques
 Various vectorization techniques are evaluated to convert the text data into numerical features that can be used by machine learning models. The following methods are used:
 
@@ -31,6 +33,7 @@ Logistic Regression: A logistic regression model is trained on the vectorized da
 Confusion Matrix: For each vectorizer, a confusion matrix is generated to visualize the model’s performance in classifying reviews correctly and incorrectly.
 Word2Vec and FastText: Additional models are trained using Word2Vec and FastText embeddings, which are word representation models that capture semantic meaning based on word context. These models are evaluated similarly to the traditional vectorization methods.
 Performance Evaluation: Each model's performance is assessed using metrics like accuracy, Mean Squared Error (MSE), and classification reports.
+
 5. Classification with Machine Learning Models
 Several classification algorithms are tested to identify the best model for sentiment analysis. The following classifiers are evaluated:
 
@@ -44,12 +47,14 @@ For each classifier, the following steps are conducted:
 Pipeline Construction: A pipeline is created using the TfidfVectorizer for feature extraction and the chosen classifier for prediction.
 Model Fitting and Prediction: The models are trained and used to predict the sentiment of movie reviews.
 Performance Metrics: Each model's accuracy, AUC (Area Under Curve), and confusion matrix are computed. The classification report is generated for detailed performance analysis.
+
 6. Hyperparameter Tuning and Final Evaluation
 Once the classifiers are trained, hyperparameter tuning is performed to optimize model performance. The following steps are carried out:
 
 GridSearchCV: Grid search is used to tune hyperparameters for LogisticRegression and RandomForestClassifier. This helps in finding the best combination of hyperparameters for each model.
 Best Parameters: The best hyperparameters for each model are identified, and the tuned models are evaluated again.
 Model Comparison: A final comparison is made between pre-tuned and post-tuned classifiers based on their accuracy.
+
 7. Conclusion
 After evaluating different vectorization techniques and classifiers, the following insights are derived:
 
