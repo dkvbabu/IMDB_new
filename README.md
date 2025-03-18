@@ -62,6 +62,6 @@ Best Performing Models: Logistic Regression and Linear SVC show the highest accu
 Tuning Impact: Hyperparameter tuning improves the performance of classifiers like Logistic Regression and Random Forest, leading to better results.
 Model Recommendation: Based on accuracy, computational efficiency, and interpretability, Logistic Regression is recommended as the best model for this sentiment analysis task.
 Future Improvements: The project can be extended by incorporating deep learning-based models or exploring more advanced text preprocessing techniques to improve accuracy further.
-Appendix
-Dependencies: The following libraries and tools are required to run the notebook: - Pandas. - Numpy. - NLTK. - Scikit-learn - Word2Vec (Gensim) - FastText (Gensim) - Matplotlib, Seaborn (for visualization) - Kaggle API (for downloading the dataset)
+
+Appendix Dependencies: The following libraries and tools are required to run the notebook: - Pandas. - Numpy. - NLTK. - Scikit-learn - Word2Vec (Gensim) - FastText (Gensim) - Matplotlib, Seaborn (for visualization) - Kaggle API (for downloading the dataset)
 File Structure: - datasets/: Directory where the IMDB dataset is stored. - analysis.html: Generated profiling report of the dataset. - results/: Directory where model evaluation results are saved.
